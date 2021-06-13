@@ -46,13 +46,13 @@ public class Account {
 		void calculateInterest(int years) {
 			double interestRate = 0.1;
 			double newbalance = (balance * interestRate * years) + balance;
-			System.out.println("After" + years + "years, the balance received will be" + newbalance);
+			System.out.println("After " + years + "years, the balance received will be " + newbalance);
 		}
 		//Function showing the main menu
 			void showMenu() {
 				char option = '\0';
 				Scanner scanner = new Scanner(System.in);
-				System.out.println("Welcome" + customerName + "!");
+				System.out.println("Welcome " + customerName + "!");
 				System.out.println();
 				System.out.println("What would you like to do?");
 				System.out.println();
@@ -88,7 +88,7 @@ public class Account {
 				    	
 				    //Case C allows the users to withdraw from their bank accounts
 				    case 'C':
-				    	System.out.println("Enter an amount to withdraw");
+				    	System.out.println("Enter an amount to withdraw: ");
 				    	int amount2 = scanner.nextInt();
 				    	withdraw(amount2);
 				    	System.out.println();
@@ -103,7 +103,7 @@ public class Account {
 				    	break;
 				    	
 				    case 'E':
-				    	System.out.println("Enter how many years of accrued interest: ");
+				    	System.out.println(" Enter how many years of accrued interest:  ");
 				    	int years = scanner.nextInt();
 				    	calculateInterest(years);
 				    	break;

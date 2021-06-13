@@ -5,8 +5,11 @@ public class Banks {
 		// TODO Auto-generated method stub
 		
 		Account tom = new Account("Tommy Demehin", "t007");
-		
-	    tom.showMenu();
+	   
+	    
+        Account nwo = new Account("Kelly Roland", "rx9");
+	    
+	    nwo.showMenu();
 
 	}
 
